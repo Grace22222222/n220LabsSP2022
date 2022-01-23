@@ -19,15 +19,17 @@ function setup() {
 function draw() {
 
     circle(mouseX,mouseY,50);
-    if (mouseX >200) {
+        if (mouseX >200) {
 
-        fill(255,0,0);
-        
-    }
-    if (mouseX <200) {
+            fill(255,0,0);
 
-        fill(0,0,255);
-    }
+        }
+
+        if (mouseX <200) {
+
+            fill(0,0,255);
+
+        }
 
 }
 
