@@ -18,6 +18,8 @@ function setup() {
 
 function draw() {
 
+    background(255);
+
     circle(mouseX,mouseY,50);
         if (mouseX >200) {
 

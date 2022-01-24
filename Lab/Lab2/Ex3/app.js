@@ -1,9 +1,12 @@
 //Grace Payne
-//1/20/2022
+//1/24/2022
 //N220
 
 //World Wrap
 
+//Position Start
+
+var xPos=10;
 
 //Canvas Creation
 
@@ -12,4 +15,23 @@ function setup() {
 }
 
 
-//Circle Creation
+//Circle Creation & Movement
+
+
+function draw() {
+
+    background(255);
+    circle(xPos,50,50);
+    fill(0,215,167);
+    xPos=xPos+5;
+
+        if (xPos==800){
+
+            xPos=10;
+
+        }
+
+}
+
+//Circle Movement (Start on left side, move 5 pixels per frame then once at 800, go back to the left side)
+
