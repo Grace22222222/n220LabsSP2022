@@ -32,6 +32,3 @@ function draw() {
         }
 
 }
-
-//Circle Movement (Start on left side, move 5 pixels per frame then once at 800, go back to the left side)
-
