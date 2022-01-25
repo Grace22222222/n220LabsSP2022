@@ -4,3 +4,10 @@
 
 
 //Drawing Drawer
+
+function draw() {
+
+    retangle(50,60,100);
+
+
+}
