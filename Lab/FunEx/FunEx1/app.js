@@ -5,9 +5,24 @@
 
 //Drawing Drawer
 
+
+//Setup
+
+function setup() {
+    createCanvas(800,600);
+
+
+}    
+
+//Drawing bus
+
 function draw() {
 
-    retangle(50,60,100);
-
+    fill(255,211,0);
+    rect(100,200,200,100);
+    fill(0,0,0);
+    circle(150,300,60);
+    circle(250,300,60);
 
 }
+
