@@ -15,17 +15,30 @@ function setup() {
 
 }    
 
-//Drawing bus
 
 function draw() {
 
+    drawBus(100,200);
+    
+    
+}
+
+//Drawing bus
+
+function drawBus(x,y) {
+
+
     fill(255,211,0);
-    rect(100,200,200,100);
+    rect(x,y,200,100);
     fill(0,0,0);
     circle(150,300,60);
     circle(250,300,60);
 
+        
+
 }
+
+
 
 
 
