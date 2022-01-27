@@ -3,4 +3,12 @@
 //N220
 
 
-//Red Remover
+//Red 
+
+//Setup
+
+function setup() {
+    createCanvas(800,600);
+
+
+}   

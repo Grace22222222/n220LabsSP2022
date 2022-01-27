@@ -4,3 +4,11 @@
 
 
 //Polar Points
+
+//Setup
+
+function setup() {
+    createCanvas(800,600);
+
+
+}   
