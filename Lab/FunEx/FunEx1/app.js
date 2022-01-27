@@ -18,14 +18,19 @@ function setup() {
 
 function draw() {
 
-    drawBus(100,200);
-    
-    
+    drawBus1(100,200);
+    drawBus2(50,100)
+    drawBus3(300,50)
+
 }
 
-//Drawing bus
+//Drawing buses
 
-function drawBus(x,y) {
+//Had to make multiple functions of drawBus because I couldn't get the circles to change with the arguements
+
+//Had to input the change in the circle size and placement by hand
+
+function drawBus1(x,y) {
 
 
     fill(255,211,0);
@@ -34,13 +39,29 @@ function drawBus(x,y) {
     circle(150,300,60);
     circle(250,300,60);
 
-        
+}
+
+function drawBus2(x,y) {
+
+
+    fill(255,211,0);
+    rect(x,y,100,50);
+    fill(0,0,0);
+    circle(80,150,30);
+    circle(120,150,30);
 
 }
 
+function drawBus3(x,y) {
 
 
+    fill(255,211,0);
+    rect(x,y,175,75);
+    fill(0,0,0);
+    circle(350,125,55);
+    circle(425,125,55);
 
+}
 
 
 

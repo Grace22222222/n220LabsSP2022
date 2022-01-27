@@ -8,7 +8,21 @@
 //Setup
 
 function setup() {
-    createCanvas(800,600);
+
+    createCanvas(400,400);
 
 
 }   
+
+//circle
+
+function draw() {
+
+
+    circle(200,200,50);
+
+
+
+
+
+}
