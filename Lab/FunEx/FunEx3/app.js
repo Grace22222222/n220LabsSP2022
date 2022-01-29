@@ -14,18 +14,21 @@ function setup() {
 
 }   
 
+//translate(100,100);
 
 function draw() {
 
+    //circle(100,100,10);
+    //translate(100,100);
+    res==polarPoint();
     circle(res.x,res.y,10);
-
 
 }
 
 function polarPoint(r) {
 
     x==r*Math.sin(mouseX);
-    y==Math.cos(mouseX);
+    y==Math.cos(mouseY);
 
     return createVector(x,y);
 

@@ -3,9 +3,15 @@
 //N220
 
 
-//Red 
+//Red Remover
+
+
+//let noRed= removeRed(new Color(170,200,150));
+//colorVariableArgumentName.setRed(0);
 
 //Setup
+
+
 
 function setup() {
 
@@ -16,13 +22,31 @@ function setup() {
 
 //circle
 
+function removeRed(cB) {
+
+    
+    cB.setRed(0);
+
+    return cB;
+    
+
+    //color(170,200,150);
+
+}
+
+
+
+//fill(noRed);
+
 function draw() {
 
 
     circle(200,200,50);
-
+    let noRed= removeRed(new Color(170,200,150));
+    fill(noRed);
 
 
 
 
 }
+
