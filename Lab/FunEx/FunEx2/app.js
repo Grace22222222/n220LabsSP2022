@@ -6,12 +6,18 @@
 //Red Remover
 
 
-//let noRed= removeRed(new Color(170,200,150));
-//colorVariableArgumentName.setRed(0);
 
 //Setup
 
+//Write a function that takes a color as an argument ( you can use new Color(170, 200, 150) ) sets the red component of that color to zero  ( colorVariableArgumentName.setRed(0) ) Returns that new color without red
 
+//Then, test this function by drawing a circle to the screen using the result. You might have something like: 
+
+//let noRed = removeRed( new Color(170, 200, 150) );
+
+//fill(noRed);
+
+//draw circle
 
 function setup() {
 
@@ -20,32 +26,19 @@ function setup() {
 
 }   
 
-//circle
 
-function removeRed(cB) {
+new Color(170,200,150);
 
-    
-    cB.setRed(0);
+colorVariableArguementName.setRed(0);
 
-    return cB;
-    
+let noRed = removeRed(new Color(170,200,150));
 
-    //color(170,200,150);
-
-}
-
-
-
-//fill(noRed);
+fill(noRed);
 
 function draw() {
 
-
     circle(200,200,50);
-    let noRed= removeRed(new Color(170,200,150));
-    fill(noRed);
-
-
+    
 
 
 }
