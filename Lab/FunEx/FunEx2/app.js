@@ -22,7 +22,7 @@
 
 //Setup
 
-let noRed = removeRed(new Color(170,200,150));
+let noRed=removeRed(new Color(170,200,150));
 
 function setup() {
 

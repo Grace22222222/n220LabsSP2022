@@ -14,6 +14,7 @@ function setup() {
 
 }   
 
+//Polar Function
 
 function polarPoint(r) {
 
@@ -26,18 +27,14 @@ function polarPoint(r) {
 
 }
 
+//Draw Circle
 
 function draw() {
 
     translate(100,100);
-    //circle(res.x,res.y,10);
-    //circle(100,100,10);
-    //translate(100,100);
     res=polarPoint(40);
     circle(res.x,res.y,10);
     
-    
-
 }
 
 
