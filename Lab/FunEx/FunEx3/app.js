@@ -10,28 +10,34 @@
 function setup() {
 
     createCanvas(500,500);
-
+    polarPoint(100) ;
 
 }   
-
-//translate(100,100);
-
-function draw() {
-
-    //circle(100,100,10);
-    //translate(100,100);
-    res==polarPoint();
-    circle(res.x,res.y,10);
-
-}
 
 
 function polarPoint(r) {
 
-    x==r*Math.sin(mouseX);
-    y==Math.cos(mouseY);
+    x=r*Math.sin(mouseX);
+    y=r*Math.cos(mouseY);
+    
 
     return createVector(x,y);
 
 
 }
+
+
+function draw() {
+
+    translate(100,100);
+    //circle(res.x,res.y,10);
+    //circle(100,100,10);
+    //translate(100,100);
+    res=polarPoint(40);
+    circle(res.x,res.y,10);
+    
+    
+
+}
+
+
