@@ -27,11 +27,11 @@ let noRed=removeRed(new Color(170,200,150));
 function setup() {
 
     createCanvas(400,400);
-
+    
 
 }   
 
-
+//CREATE REMOVERED FUNCTION
 
 /*colorVariableArguementName.setRed(0);*/
 
@@ -44,8 +44,8 @@ function setup() {
 function draw() {
 
     circle(200,200,50);
-    fill(noRed);
-    colorVariableArguementName.setRed(0);
+    fill(noRed); //Put before circle
+    colorVariableArguementName.setRed(0); //Put in removeRed Function
 
 }
 
