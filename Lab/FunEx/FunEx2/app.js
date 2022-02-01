@@ -33,6 +33,13 @@ function setup() {
 
 //CREATE REMOVERED FUNCTION
 
+function removeRed() {
+
+    colorVariableArguementName.setRed(0); //Put in removeRed Function
+
+
+}
+
 /*colorVariableArguementName.setRed(0);*/
 
 /*let noRed = removeRed(new Color(170,200,150));*/
@@ -43,9 +50,11 @@ function setup() {
 
 function draw() {
 
+    fill(noRed); //Put before Circle
     circle(200,200,50);
-    fill(noRed); //Put before circle
-    colorVariableArguementName.setRed(0); //Put in removeRed Function
+    
 
 }
 
+
+//I don't know what else to do to fix this. I'm turning it in as is because I've been working on this sole part for over 12 hours now. I thought I'd get it with the professoer's help, but I'm clearly inpat when it comes to this one part.
