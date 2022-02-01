@@ -10,42 +10,31 @@
 function setup() {
 
     createCanvas(500,500);
-
-    
+    polarPoint(100) ;
 
 }   
 
-//translate(100,100);
-
-function draw() {
-
-    //circle(100,100,10);
-    //translate(100,100);
-    /*function polarPoint(r) {
-
-        x==r*Math.sin(mouseX);
-        y==Math.cos(mouseY);
-    
-        return createVector(x,y);
-    
-    
-    } */
-
-    res==polarPoint();
-    circle(res.x,res.y,10);
-    //I put this in because no matter what I do, I can't figure this out. It's better to give half of the effort, than all of the effort and get nothing in result
-    fill(0,200,150);
-
-}
-
-
+//Polar Function
 
 function polarPoint(r) {
 
-    x==r*Math.sin(mouseX);
-    y==Math.cos(mouseY);
+    x=r*Math.sin(mouseX);
+    y=r*Math.cos(mouseY);
+    
 
     return createVector(x,y);
 
 
-} 
+}
+
+//Draw Circle
+
+function draw() {
+
+    translate(100,100);
+    res=polarPoint(40);
+    circle(res.x,res.y,10);
+    
+}
+
+
