@@ -22,7 +22,7 @@
 
 //Setup
 
-let noRed=removeRed(new Color(170,200,150));
+
 
 function setup() {
 
@@ -33,9 +33,10 @@ function setup() {
 
 //CREATE REMOVERED FUNCTION
 
-function removeRed() {
+function removeRed(c) {
 
-    colorVariableArguementName.setRed(0); //Put in removeRed Function
+    c.setRed(0); //Put in removeRed Function
+    return c;
 
 
 }
@@ -50,9 +51,11 @@ function removeRed() {
 
 function draw() {
 
-    fill(noRed); //Put before Circle
-    circle(200,200,50);
     
+    //Put before Circle
+    circle(200,200,50);
+    noRed=removeRed(color(170,200,150));
+    fill(noRed);
 
 }
 
