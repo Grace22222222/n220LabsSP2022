@@ -60,4 +60,3 @@ function draw() {
 }
 
 
-//I don't know what else to do to fix this. I'm turning it in as is because I've been working on this sole part for over 12 hours now. I thought I'd get it with the professoer's help, but I'm clearly inpat when it comes to this one part.
