@@ -16,3 +16,20 @@ function setup() {
 
 }
 
+//Setting up object
+
+let objBox ={
+
+    x:50, y:50, boxColor:"FF7733", size:50 
+
+} ;
+
+//Drawing
+
+function draw() {
+
+    
+    square(objBox.x, objBox.y, objBox.size);
+    fill(objBox.boxColor);
+
+}

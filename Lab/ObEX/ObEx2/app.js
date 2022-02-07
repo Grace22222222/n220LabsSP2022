@@ -15,3 +15,34 @@ function setup() {
     createCanvas(500,500);
 
 }
+
+//Setting up Object
+
+let objBall ={
+
+    x:20, y:20, ballColor:"990000", size:50
+
+
+} ;
+
+//Drawing
+
+function draw() {
+
+    var x = Event.offsetX;
+
+        if(mousePressed) {
+
+            offsetX-= 1;
+
+        }
+
+        else {
+
+            offsetX+= 1;
+
+        }
+
+        circle(objBall.x, objBall.y, objBall.size);
+
+}
