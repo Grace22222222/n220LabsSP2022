@@ -20,7 +20,7 @@ function setup() {
 
 let objBall ={
 
-    x:20, y:20, ballColor:"990000", size:50
+    x:100, y:100, ballColor:"#99FFFF", size:50
 
 
 } ;
@@ -28,6 +28,24 @@ let objBall ={
 //Drawing
 
 function draw() {
+
+    fill(objBall.ballColor);
+    circle(objBall.x, objBall.y, objBall.size);
+    
+
+    if(mousePressed) {
+
+        offsetX= -1;
+
+    }
+
+    else{
+
+        offsetX= +1
+    }
+
+
+    /*
 
     var x = Event.offsetX;
 
@@ -43,6 +61,6 @@ function draw() {
 
         }
 
-        circle(objBall.x, objBall.y, objBall.size);
+    */
 
 }

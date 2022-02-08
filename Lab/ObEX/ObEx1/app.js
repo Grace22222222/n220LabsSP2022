@@ -20,15 +20,22 @@ function setup() {
 
 let objBox ={
 
-    x:50, y:50, boxColor:"FF7733", size:50 
+    x:50, y:50, boxColor:"#FF7733", size:50 
 
 } ;
+
+function sox(r) {
+
+    circle(250,250,r);
+    
+
+}
 
 //Drawing
 
 function draw() {
 
-    
+    sox(50);
     square(objBox.x, objBox.y, objBox.size);
     fill(objBox.boxColor);
 
