@@ -10,6 +10,7 @@
 
 //Setup
 
+
 function setup() {
 
     createCanvas(500,500);
@@ -40,3 +41,46 @@ function draw() {
     fill(objBox.boxColor);
 
 }
+
+
+
+/*
+//In Class Work
+
+//Setup
+
+function setup() {
+
+    createCanvas(600,600);
+
+}
+
+function outerTV() {
+
+    rect(150,110,250,170);
+    fill("#111111");
+
+
+}
+
+function innerTV() {
+
+    rect(200,60,200,120);
+    fill("#443399");
+
+
+}
+
+
+//Drawing
+
+function draw() {
+
+
+    innerTV();
+    outerTV();
+    
+
+}
+
+*/

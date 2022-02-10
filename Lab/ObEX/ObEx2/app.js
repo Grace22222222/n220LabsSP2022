@@ -18,6 +18,8 @@ function setup() {
 
 //Setting up Object
 
+
+//Tried putting mouseX both as the x variable, and the value of it in the objBall function. Neither worked and caused errors
 let objBall ={
 
     x:100, y:100, ballColor:"#99FFFF", size:50
@@ -27,21 +29,31 @@ let objBall ={
 
 //Drawing
 
+let offsetX=100;
+
+//Had to put mouseX and mouseY within the circle function in order to get it to work. Not sure why I thought putting it in the object function would work now that I think about it
+
 function draw() {
 
+    background(255);
     fill(objBall.ballColor);
-    circle(objBall.x, objBall.y, objBall.size);
+    circle(mouseX+offsetX, mouseY, objBall.size);
     
+    if(offsetX<=0) {
 
-    if(mousePressed) {
+        offsetX=0;
 
-        offsetX= -1;
+    }
+
+    if(mouseIsPressed) {
+
+        offsetX+= -1;
 
     }
 
     else{
 
-        offsetX= +1
+        offsetX+= +1;
     }
 
 
