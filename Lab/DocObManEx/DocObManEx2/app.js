@@ -3,3 +3,8 @@
 //N220
 
 //McDiv'ns
+
+//Funny fast food clown honk honk
+
+let clown = document.getElementById("ronald");
+
