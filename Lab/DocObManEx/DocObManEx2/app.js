@@ -8,3 +8,4 @@
 
 let clown = document.getElementById("ronald");
 
+ronald.innerHTML="mc";

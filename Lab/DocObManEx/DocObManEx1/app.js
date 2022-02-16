@@ -14,7 +14,7 @@ shape.style.height="100px";
 shape.style.width="100px";
 shape.style.backgroundColor="#00FF66";
 
-//Spent some time trying to figure out how to make the sizing change
+//No idea what to do
 //varName+"px"
 
     var height = "100px";
