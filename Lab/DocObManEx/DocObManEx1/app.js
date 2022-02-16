@@ -8,16 +8,33 @@
 
 let shapeD = document.getElementById("shape");
 
-//Had an issue with placement of the styles below
-
-shape.style.height="100px";
-shape.style.width="100px";
+var num="100";
+nump=num+"px";
+shape.style.height=nump;
+shape.style.width=nump;
 shape.style.backgroundColor="#00FF66";
 
-//No idea what to do
+//Had an issue with placement of the styles below
+
+//shape.style.height="100px";
+//shape.style.width="100px";
+
+
 //varName+"px"
 
-    var height = "100px";
-    var width = "100px";
 
+
+function sizeChange() {
+
+    //shape.style.height=shape.style.height*"1.1";
+    //shape.style.width=shape.style.width*"1.1";
+    num=num*"1.1";
+    nump=num+"px";
+    shape.style.height=nump;
+    shape.style.width=nump;
+
+
+}
+
+shape.onclick = function() {sizeChange()};
 
