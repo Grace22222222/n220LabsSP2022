@@ -25,7 +25,7 @@ function fry() {
     //Add 'Mc' to the variable
     //Add to document
     ronald.innerHTML="mcclowns";
-
+    //["mc" + clowns]
 
     console.log(mcclowns);
 

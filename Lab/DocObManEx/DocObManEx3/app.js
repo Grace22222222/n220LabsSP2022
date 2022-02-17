@@ -7,7 +7,7 @@
 let pilot = document.getElementById("plane");
 
 
-//var col="#000000";
+var col="#000000";
 
 var lor="#0055FF";
 
@@ -24,14 +24,21 @@ plane.style.backgroundColor= lor;
 //Make another function to change the color back? Yes
 function colorChange() {
 
-plane.style.backgroundColor= col;
+    plane.style.backgroundColor= col;
 
+
+}
+
+function colorBack() {
+
+    plane.style.backgroundColor= lor;
 
 }
 
 
 //Use onmouseover and onmouseout
-shape.onmouseover = function() {colorChange()};
+plane.onmouseover = function() {colorChange()};
+plane.onmouseout = function() {colorBack()};
 
 
 
