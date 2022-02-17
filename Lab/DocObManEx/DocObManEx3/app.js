@@ -6,14 +6,43 @@
 
 let pilot = document.getElementById("plane");
 
+
+//var col="#000000";
+
+var lor="#0055FF";
+
+col=lor-"#0055FF"
+
 plane.style.height="100px";
 plane.style.width="100px";
-plane.style.backgroundColor="#0055FF";
+plane.style.backgroundColor= lor;
 
 
 
 
 //Having a hard time figuring out how to get the color to change
+
+function colorChange() {
+
+plane.style.backgroundColor= col;
+
+
+}
+
+
+
+shape.onmouseover = function() {colorChange()};
+
+
+
+
+
+
+
+
+
+
+
 
 
 //divs don't work, don't know why I tried this
