@@ -38,3 +38,29 @@ function sizeChange() {
 
 shape.onclick = function() {sizeChange()};
 
+
+
+//CLASSWORK
+
+/*
+
+for(let i=0; i<11; i++){
+
+    console.log("1 2 3 4 5 6 7 8 9 10");
+}
+
+
+
+
+let schools=["Indiana","University","Purdue","University","Indianapolis"];
+
+for(let i=0; i<schools.length; i++) {
+
+number.innerHTML+=schools[i];
+
+}
+
+for(let i=0; i<schools.length; i++) {
+
+}
+*/

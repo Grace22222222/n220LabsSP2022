@@ -8,4 +8,29 @@
 
 let clown = document.getElementById("ronald");
 
-ronald.innerHTML="mc";
+var burg="clowns";
+
+
+
+ronald.style.height="100";
+ronald.style.width="100";
+//ronald.style.backgroundColor="#FFFF55";
+
+ronald.innerHTML="clowns";
+
+function fry() {
+
+    //Take what's in it
+    //Store it
+    //Add 'Mc' to the variable
+    //Add to document
+    ronald.innerHTML="mcclowns";
+
+
+    console.log(mcclowns);
+
+}
+
+
+
+ronald.onclick = function() {fry()};

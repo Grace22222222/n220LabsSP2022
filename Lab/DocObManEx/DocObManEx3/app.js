@@ -11,7 +11,7 @@ let pilot = document.getElementById("plane");
 
 var lor="#0055FF";
 
-col=lor-"#0055FF"
+//col=lor+"#000000";
 
 plane.style.height="100px";
 plane.style.width="100px";
@@ -21,7 +21,7 @@ plane.style.backgroundColor= lor;
 
 
 //Having a hard time figuring out how to get the color to change
-
+//Make another function to change the color back? Yes
 function colorChange() {
 
 plane.style.backgroundColor= col;
@@ -30,7 +30,7 @@ plane.style.backgroundColor= col;
 }
 
 
-
+//Use onmouseover and onmouseout
 shape.onmouseover = function() {colorChange()};
 
 
