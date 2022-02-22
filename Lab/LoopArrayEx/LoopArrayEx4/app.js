@@ -3,3 +3,5 @@
 //N220
 
 //Favorray
+
+let Flapflap = document.getElementById("SeaPancake");

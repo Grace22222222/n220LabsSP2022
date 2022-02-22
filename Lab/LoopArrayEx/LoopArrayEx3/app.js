@@ -3,3 +3,5 @@
 //N220
 
 //Runner Up
+
+let Sonic = document.getElementById("Speed");
