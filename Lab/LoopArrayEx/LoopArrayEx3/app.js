@@ -5,3 +5,5 @@
 //Runner Up
 
 let Sonic = document.getElementById("Speed");
+
+//I don't know what to do

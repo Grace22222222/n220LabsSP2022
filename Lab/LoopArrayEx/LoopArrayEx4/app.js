@@ -5,3 +5,5 @@
 //Favorray
 
 let Flapflap = document.getElementById("SeaPancake");
+
+//I don't know what to do
