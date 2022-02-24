@@ -6,4 +6,17 @@
 
 let Sonic = document.getElementById("Speed");
 
-//I don't know what to do
+//Create an Array with the 3 best times
+
+//Best times: 10:30, 12:00, 2:40
+
+let times= ["10:30", "12:00", "2:40"];
+
+for (let i=0; i<times.length;i++) {
+
+    Sonic.innerHTML+=times[i]+ "&nbsp;";
+
+}
+
+//Write code so times go in order from lowest to highest
+//Show second and third place times in different div's

@@ -8,6 +8,7 @@
 //Write a loop that runs 25 times and writes the iterand (current iteration of the loop) out onto the page inside of a div element.However, When the iterand is divisible by 3, write the word "beep" instead/ When the iterand is divisible by 5, write the word "bop" instead/ When the iterand is divisible by 3 AND 5, write "beepbop" instead/
 
 //Setup with calling refrence
+/*
 
 let robit = document.getElementById("Robot");
 
@@ -34,5 +35,49 @@ for(let i=0;i<26;i++){
 if (multipleThree()) {
 
     robit.innerHTML="beep";
+
+}
+*/
+
+let robit = document.getElementById("Robot");
+
+
+for(let i=1;i<26;i++){
+
+    var divThree=0;
+    var divFive=0;
+    
+    if (i % 3==0) {
+
+        divThree=1;
+
+    }
+
+    if (i % 5==0) {
+
+        divFive=1;
+
+    }
+
+    if (divThree==1 && divFive==1) {
+
+        robit.innerHTML+= "BeepBop" + "&nbsp;";
+
+    } else if (divThree==1) {
+
+        robit.innerHTML+= "Beep" + "&nbsp;";
+
+    } else if (divFive==1) {
+
+        robit.innerHTML+= "Bop" + "&nbsp;";
+
+    } else {
+
+        robit.innerHTML+= i + "&nbsp;";
+
+    }
+
+    
+    //robit.innerHTML+= i + "&nbsp;";
 
 }
