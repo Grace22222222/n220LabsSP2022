@@ -13,8 +13,8 @@ var bur= "mc";
 var orderNum=0;
 
 
-ronald.style.height="100";
-ronald.style.width="100";
+//ronald.style.height="100";
+//ronald.style.width="100";
 
 //Used color to make sure the div was working properly
 //ronald.style.backgroundColor="#FFFF55";

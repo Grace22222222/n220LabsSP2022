@@ -11,13 +11,32 @@
 
 //Add clicked div's text into a seperate div on top
 
+//Setup
 let Clackity= document.getElementById("Clickity");
+
+var B ="Button"
+var U ="Buttn"
+var T ="Btton"
+var TT ="Buuton"
+var O ="Butoon"
+var N ="Botun"
 
 //Space for top text
 
-for (let i=0; i<6; i++) {
+function callAll() {
 
-    Clackity.innerHTML="Button, Buttn, Btton, Buuton, Butoon, Botun";
+    Clackity.innerHTML= B+"&nbsp;"+U+"&nbsp;"+T+"&nbsp;"+TT+"&nbsp;"+O+"&nbsp;"+N+"&nbsp;";
+    
+}
+
+callAll();
+/*
+function Backk() {
+
+    //Clackity.style.backgroundColor="#a7bed3";
+    B.setAttribute(onclick, backgroundColor="#a7bed3")
 
 }
 
+B.onclick = function(){Backk()};
+*/
