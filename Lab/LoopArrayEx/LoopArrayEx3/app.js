@@ -12,17 +12,15 @@ let Sonic = document.getElementById("Speed");
 
 let times= [8.50, 10.30, 12.1];
 
-for (let i=0; i<times.length;i++) {
-
-    Sonic.innerHTML+=times[i]+ "&nbsp;";
-
-}
-
 //Write code so times go in order from lowest to highest (Already did that)
 
 //Show second and third place times in different div's (Not a loop)
 
+Sonic.innerHTML+=times[0]+ "&nbsp;";
+Sonic.innerHTML+=times[1]+ "&nbsp;";
+Sonic.innerHTML+=times[2]+ "&nbsp;";
 
+//Got rid of the loops as I was told to not do them in a loop
 
 //CLASSWORK 
 /*

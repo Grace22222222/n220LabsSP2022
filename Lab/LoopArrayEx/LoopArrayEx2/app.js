@@ -39,14 +39,19 @@ if (multipleThree()) {
 }
 */
 
+//Setup
 let robit = document.getElementById("Robot");
 
-
+//Make for loop
 for(let i=1;i<26;i++){
 
+
+    //Vars
     var divThree=0;
     var divFive=0;
     
+
+    //Make if statments
     if (i % 3==0) {
 
         divThree=1;
@@ -59,6 +64,8 @@ for(let i=1;i<26;i++){
 
     }
 
+
+    //Make bigger if statments
     if (divThree==1 && divFive==1) {
 
         robit.innerHTML+= "BeepBop" + "&nbsp;";
