@@ -13,30 +13,56 @@
 
 //Setup
 let Clackity= document.getElementById("Clickity");
-
+/*
 var B ="Button"
 var U ="Buttn"
 var T ="Btton"
 var TT ="Buuton"
 var O ="Butoon"
 var N ="Botun"
-
+*/
 //Space for top text
 
-function callAll() {
+let words=["Button ", "Buttn ", "Btton ", "Buuton ", "Butoon ", "Botun "];
 
-    Clackity.innerHTML= B+"&nbsp;"+U+"&nbsp;"+T+"&nbsp;"+TT+"&nbsp;"+O+"&nbsp;"+N+"&nbsp;";
+for (let i=0; i<words.length;i++) {
+
+    Clackity.innerHTML+= words[i];
+
+}
+
+function Bback() {
+
+    //Clackity.onclick = function(){high()};
+    words[1].onclick = function(){high()};
+
+}
+
+Bback();
+
+
+function high() {
+    console.log(Clackity);
+    Clackity.style.backgroundColor="#a7bed3";
     
 }
 
-callAll();
+
 /*
+function callAll() {
+
+    Clackity.innerHTML= "Button" + "&nbsp;" + "Buttn" + "&nbsp;" + "Btton" + "&nbsp;" + "Buuton" + "&nbsp;" + "Butoon" + "&nbsp;" + "Botun";
+     
+}
+
+callAll();
+
 function Backk() {
 
     //Clackity.style.backgroundColor="#a7bed3";
-    B.setAttribute(onclick, backgroundColor="#a7bed3")
+    //Clackity.setAttribute(onclick, backgroundColor="#a7bed3")
 
 }
 
-B.onclick = function(){Backk()};
+Clackity.onclick = function(){Backk()};
 */
