@@ -66,3 +66,6 @@ function Backk() {
 
 Clackity.onclick = function(){Backk()};
 */
+
+
+//I couldn't finish these. I did my best, but with other work and due to my own misunderstandings, I just couldn't get these to work no matter how hard I tried. I am so so so sorry
