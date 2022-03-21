@@ -7,8 +7,8 @@
 
 
 //Make two input and one button
+let user = document.getElementById("user");
 let pass = document.getElementById("pass");
-let type = document.getElementById("type");
 let time = document.getElementById("time");
 
 //When button is clicked, make sure user wrote these words
@@ -16,15 +16,28 @@ let time = document.getElementById("time");
 
 function checkText() {
 
+    //Don't need this actually
+    //let readThis = user.value;
 
+    //If correct, write Success, if wrong, write Wrong information
+    //Use only one if statement
+    if ((user.value== "Username") && (pass.value== "Password")) {
 
+        let textA = "Success";
+        time.innerHTML = textA;
+        user.value= "";
+        pass.value= "";
+
+    } else {
+
+        let textA = "Wrong Information";
+        time.innerHTML = textA;
+        user.value= "";
+        pass.value= "";
+
+    }
     
 }
-
-
-//If correct, write Success, if wrong, write Wrong information
-
-//Use only one if statement
 
 
 
