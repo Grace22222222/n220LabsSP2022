@@ -13,20 +13,36 @@ let diviNum = document.getElementById("diviNum");
 //function should return either true or false
 function divButton() {
 
+    
     //Maybe make an if statement to make this work out
 
-    if (numberType.value == /*divisble by 7*/) {
+    //if (VorNam %7 ==0) {//is divisible by 7}
 
+    /*divisble by 7*/
+    if (numberType.value %7 == 0) {
 
+        let numPlus = numberType.value;
+
+        numberType.value = "";
+
+        let numMin = `${numPlus}`;
+
+        diviNum.innerHTML = numMin + " is divisible by 7";
+    } else {
+
+        let numPlus = numberType.value;
+
+        numberType.value = "";
+
+        let numMin = `${numPlus}`;
+
+        diviNum.innerHTML = numMin + " is not divisible by 7";
 
     }
 
-    let numPlus = numberType.value;
-
-    let numMin = `${numPlus}` + " is not divisble by 7";
-
-    numberType.value = "";
-
-    diviNum.innerHTML = numMin;
-
+    
 } 
+
+
+divButton();
+diviNum.innerHTML = "";
