@@ -14,8 +14,6 @@ let squareThree = document.getElementById("squareThree");
 
 function changeStyle() {
 
-    
-
     squareOne.style.backgroundColor= "#0000FF";
     squareOne.style.height= "100px";
     squareOne.style.width= "50px";
@@ -41,7 +39,6 @@ function changeStyle3() {
 
 function square1() {
 
-    
     squareOne.style.backgroundColor= "#FF0000";
     squareOne.style.height= "100px";
     squareOne.style.width= "100px";
