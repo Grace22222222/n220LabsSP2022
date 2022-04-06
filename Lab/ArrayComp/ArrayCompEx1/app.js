@@ -15,28 +15,56 @@
 let averaType = document.getElementById("averaType");
 let numberIn = document.getElementById("numberIn");
 averaType.innerHTML = "Type some numbers! Be sure to put commas between them!";
+var total = 0;
+var ave = 0;
+var numArray;
+
 
 function calcuNum() {
 
-    let numType = numberIn.value;
+    var numType;
+
+    numType = document.getElementById("numberIn").value;
+
+    //console.log(numType);
 
     numberIn.value = "";
 
-    //var res = StrVariableName.split(",");
+    numArray = numType.split(",");
+
+    sumAve();
+    
+    averaType.innerHTML= "Average: " + ave + " | Sum: " + total;
+
+    
+}
+
+
+calcuNum();
+
+//numberIn.value = "";
+
+
+
+function sumAve() {
+
+    for (let i=0; i<numArray.length; i++){
+
+        var curNum = Number(numArray[i]);
+        
+        total = total + curNum;
+
+        console.log(total);
+
+
+    }
+
+    ave = total / numArray.length;
+
+    console.log(ave);
 
 }
 
-numberIn.value = "";
-
-/*
-function arrayMaker() {
-
-    let numType = numberIn.value;
-
-
-
-}
-*/
 
 
 

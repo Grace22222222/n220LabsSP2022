@@ -17,4 +17,4 @@ let objects = [
 
 ];
 
-//Write a loop that crates 3 divs based on the data. Should only hae one document.createElement in code
+//Write a loop that creates 3 divs based on the data. Should only hae one document.createElement in code
