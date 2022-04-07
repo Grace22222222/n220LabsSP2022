@@ -5,15 +5,52 @@
 
 //Check Win Function
 
+
+
+//Create an application that: 
+
+//Takes input from the user in a text field
+
+let oneType = document.getElementById("oneType");
+let winThree = document.getElementById("winThree");
+
+
+function winnerLos() {
+
+    var zeroType;
+
+    zeroType = document.getElementById("oneType").value;
+
+//Splits the input into an array
+    arrayOne = zeroType.split(",");
+//Uses a loop to check to see if there are three "1s" in a row in the array
+
+//Make loop that tells you how many ones are in the input
+    for (let i = 0; i < arrayOne.length; i++){
+
+        console.log(arrayOne[i]);
+//Displays the word "winner" or "not winner" on the document
+        if (zeroType == "111") {
+
+            winThree.innerHTML = "Winner!";
+
+        } else {
+
+            winThree.innerHTML = "Not Winner";
+
+    }
+
+    oneType.value = "";
+
+
+
+    }
+
+    
+
+}
+
 /*
-
-Create an application that: 
-
-Takes input from the user in a text field
-Assumes the input is a set of comma-separated values
-Splits the input into an array
-Uses a loop to check to see if there are three "1s" in a row in the array
-Displays the word "winner" or "not winner" on the document depending on the result
 
 Check Win Function
 

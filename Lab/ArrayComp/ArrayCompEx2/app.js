@@ -17,4 +17,12 @@ let objects = [
 
 ];
 
+let divArray = document.getElementById("divArray");
 //Write a loop that creates 3 divs based on the data. Should only hae one document.createElement in code
+for (let i = 0; i<objects.length; i++){
+
+    document.createElement //Only one of these!
+
+
+}
+
