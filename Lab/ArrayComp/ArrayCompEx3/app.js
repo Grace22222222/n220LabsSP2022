@@ -28,9 +28,11 @@ function winnerLos() {
 //Make loop that tells you how many ones are in the input
     for (let i = 0; i < arrayOne.length; i++){
 
-        console.log(arrayOne[i]);
+    let result = zeroType.match("111")
+    console.log(result);
+
 //Displays the word "winner" or "not winner" on the document
-        if (zeroType == "111") {
+        if (result == "111") {
 
             winThree.innerHTML = "Winner!";
 
