@@ -6,6 +6,7 @@
 //Make Divs
 
 //Given the array 
+let divArray = document.getElementById("divArray");
 
 let objects = [
 
@@ -17,11 +18,15 @@ let objects = [
 
 ];
 
-let divArray = document.getElementById("divArray");
+
 //Write a loop that creates 3 divs based on the data. Should only hae one document.createElement in code
 for (let i = 0; i<objects.length; i++){
 
-    let cubeArray = document.createElement("cubeArray") //Only one of these!
+    let cubeArray = document.createElement("div") //Only one of these!
+
+    divArray.innerHTML = cubeArray;
+
+    console.log(cubeArray);
 
     
     
