@@ -34,6 +34,8 @@ function cubeColor1() {
     colorBox3.style.cssFloat= "left";
 
 }
+
+
 /*
 function cubeColor2() {
 

@@ -10,3 +10,4 @@
 //9 buttons. +1, +5, and +10 for each color
 //1 div that will change colors to rgb color calculated
 //1 div that shows current calculated color
+

@@ -22,9 +22,11 @@ let objects = [
 //Write a loop that creates 3 divs based on the data. Should only hae one document.createElement in code
 for (let i = 0; i<objects.length; i++){
 
+
+
     let cubeArray = document.createElement("div") //Only one of these!
 
-    divArray.innerHTML = cubeArray;
+    //divArray.innerHTML = cubeArray;
 
     console.log(cubeArray);
 
@@ -32,4 +34,5 @@ for (let i = 0; i<objects.length; i++){
     
 
 }
+
 
