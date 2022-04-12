@@ -11,3 +11,32 @@
 //1 div that will change colors to rgb color calculated
 //1 div that shows current calculated color
 
+let mixBox = document.getElementById("mixBox");
+
+let colorCombo = mixBox.style.backgroundColor;
+
+function startBox() {
+
+    mixBox.style.backgroundColor= "#000000";
+    mixBox.style.width= "500px";
+    mixBox.style.height= "100px";
+
+}
+
+
+
+function mixboxText() {
+
+    mixBox.innerHTML= "Current Color: RGB";
+    
+
+}
+
+startBox();
+mixboxText();
+
+function rgbButt1() {
+
+    
+
+}
