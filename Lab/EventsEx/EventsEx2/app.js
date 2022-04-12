@@ -4,17 +4,16 @@
 
 //Color Mixer
 
-//Make application that starts a div with a black color
-//User press 9 buttons associated with RGB which will change black div's colors
-//Buttons should affect additively
-//9 buttons. +1, +5, and +10 for each color
+
+
 //1 div that will change colors to rgb color calculated
-//1 div that shows current calculated color
+
 
 let mixBox = document.getElementById("mixBox");
 
 let colorCombo = mixBox.style.backgroundColor;
 
+//Make application that starts a div with a black color
 function startBox() {
 
     mixBox.style.backgroundColor= "#000000";
@@ -23,8 +22,7 @@ function startBox() {
 
 }
 
-
-
+//1 div that shows current calculated color
 function mixboxText() {
 
     mixBox.innerHTML= "Current Color: RGB";
@@ -34,9 +32,38 @@ function mixboxText() {
 
 startBox();
 mixboxText();
+//User press 9 buttons associated with RGB which will change black div's colors
+//Buttons should affect additively
+//9 buttons. +1, +5, and +10 for each color
+function RgbButt1() {
 
-function rgbButt1() {
+    colorCombo + "#010000";
+    //mixBox.style.backgroundColor
+}
 
-    
+console.log(mixBox.style.backgroundColor);
+
+function RgbButt2() {
+
+    colorCombo + "#050000";
 
 }
+
+function RgbButt3() {
+
+    colorCombo + "#100000";
+
+}
+
+function rGbButt4() {
+
+    colorCombo + "#000100";
+
+}
+
+function rGbButt5() {
+
+    colorCombo + "#000500";
+
+}
+

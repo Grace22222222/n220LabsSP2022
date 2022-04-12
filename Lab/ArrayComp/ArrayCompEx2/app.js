@@ -5,9 +5,9 @@
 
 //Make Divs
 
-//Given the array 
 let divArray = document.getElementById("divArray");
 
+//Given the array 
 let objects = [
 
  { color: "#FF0000", height: 100, width: 300 },
@@ -24,15 +24,24 @@ for (let i = 0; i<objects.length; i++){
 
 
 
-    let cubeArray = document.createElement("div") //Only one of these!
+    let cubeTemp = document.createElement("div") //Only one of these!
 
+    cubeTemp.innerHTML= objects[i].color;
+
+    //three lines of code that change the style of cubeTemp
+
+    cubeTemp.style.backgroundColor = objects[i].color;
+    cubeTemp.style.height = objects[i].height + "px";
+    cubeTemp.style.width = objects[i].width + "px";
+
+    //= objects[i];
     //divArray.innerHTML = cubeArray;
 
-    console.log(cubeArray);
+    console.log(cubeTemp);
+
+    document.body.appendChild(cubeTemp);
 
     
-    
-
 }
 
 
