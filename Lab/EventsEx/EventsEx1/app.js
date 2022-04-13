@@ -21,21 +21,9 @@ function cubeColor1() {
     colorBox1.style.margin= "5px";
     colorBox1.style.cssFloat= "left";
 
-    colorBox2.style.backgroundColor= "#555555";
-    colorBox2.style.height= "200px";
-    colorBox2.style.width= "200px";
-    colorBox2.style.margin= "5px";
-    colorBox2.style.cssFloat= "left";
-
-    colorBox3.style.backgroundColor= "#555555";
-    colorBox3.style.height= "200px";
-    colorBox3.style.width= "200px";
-    colorBox3.style.margin= "5px";
-    colorBox3.style.cssFloat= "left";
-
 }
 
-/*
+
 function cubeColor2() {
 
     colorBox2.style.backgroundColor= "#555555";
@@ -55,8 +43,8 @@ function cubeColor3() {
     colorBox3.style.cssFloat= "left";
 
 }
-*/
+
 cubeColor1(); 
-//cubeColor2(); 
-//cubeColor3();
+cubeColor2(); 
+cubeColor3();
 

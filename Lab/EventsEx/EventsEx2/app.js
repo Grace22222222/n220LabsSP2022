@@ -14,10 +14,14 @@ let mixBox = document.getElementById("mixBox");
 
 let colorCombo = mixBox.style.backgroundColor;
 
+let red = 0;
+let green = 0;
+let blue = 0;
+
 //Make application that starts a div with a black color
 function startBox() {
 
-    mixBox.style.backgroundColor= "#000000";
+    mixBox.style.backgroundColor= 'rgb('+0+','+0+','+0+')';
     mixBox.style.width= "500px";
     mixBox.style.height= "100px";
 
@@ -38,7 +42,7 @@ mixboxText();
 //9 buttons. +1, +5, and +10 for each color
 function RgbButt1() {
 
-    colorCombo + "#010000";
+    colorCombo + 'rgb('+0+','+0+','+1+')';
     //mixBox.style.backgroundColor
 }
 

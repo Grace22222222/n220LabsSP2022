@@ -20,7 +20,7 @@ for(let i = 0; i < elements.length; i++) {
 */
 
 //Use only one function and that function must make use of the button's data attribute
-elements.addEventListener("click",buttonClick)
+elements.addEventListener("click",buttonClick);
 
 function buttonClick() {
 
