@@ -35,7 +35,6 @@ function cubeColor1() {
 
 }
 
-
 /*
 function cubeColor2() {
 
