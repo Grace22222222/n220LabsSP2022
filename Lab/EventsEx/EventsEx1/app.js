@@ -19,9 +19,10 @@ cubeColor3();
 //Use only one event handler, and write event listeners to respond to a click on each element. Each element should change to a different color. One red, One green, One blue. 
 for(let i = 0; i < boxes.length; i++) {
 
-    boxes[i].addEventListener("click",function(){
+    boxes[i].addEventListener("click",function(event){
 
-        buttonClick(i)
+        console.log(event.target.dataset.color);
+        event.target.style.backgroundColor= event.target.dataset.color;
 
     });
     
@@ -49,9 +50,10 @@ function buttonClick(x) {
 }
 
 //Make three gray square divs. 200px by 200px, all floated to the left. Margin of 5px
+
 function cubeColor1() {
 
-    colorBox1.style.backgroundColor= colorBox1.dataset.color;
+    colorBox1.style.backgroundColor= "#555555";
     colorBox1.style.height= "200px";
     colorBox1.style.width= "200px";
     colorBox1.style.margin= "5px";
@@ -61,7 +63,7 @@ function cubeColor1() {
 
 function cubeColor2() {
 
-    colorBox2.style.backgroundColor= colorBox2.dataset.color;
+    colorBox2.style.backgroundColor= "#555555";
     colorBox2.style.height= "200px";
     colorBox2.style.width= "200px";
     colorBox2.style.margin= "5px";
@@ -71,7 +73,7 @@ function cubeColor2() {
 
 function cubeColor3() {
 
-    colorBox3.style.backgroundColor= colorBox3.dataset.color;
+    colorBox3.style.backgroundColor= "#555555";
     colorBox3.style.height= "200px";
     colorBox3.style.width= "200px";
     colorBox3.style.margin= "5px";
