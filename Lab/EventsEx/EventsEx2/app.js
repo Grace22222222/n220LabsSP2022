@@ -12,6 +12,8 @@
 
 let mixBox = document.getElementById("mixBox");
 
+let mixboxText = document.getElementById("mixboxText");
+
 let change = document.getElementsByClassName("change");
 
 let colorCombo = mixBox.style.backgroundColor;
@@ -31,15 +33,14 @@ function startBox() {
 }
 
 //1 div that shows current calculated color
-function mixboxText() {
+function mixboxText1() {
 
-    mixBox.innerHTML= "Current Color: " + mixBox.style.backgroundColor;
-    //console.log("updatetext");
-
+    mixboxText.innerHTML="Current Color: " + mixBox.style.backgroundColor;
+   
 }
 
 startBox();
-mixboxText();
+mixboxText1();
 
 
 //User press 9 buttons associated with RGB which will change black div's colors
@@ -54,7 +55,7 @@ function blueButtEvent(event) {
     console.log(tmpcolor);
 
     mixBox.style.backgroundColor= tmpcolor;
-    mixboxText();
+    mixboxText1();
 }
 
 function greenButtEvent(event) {
@@ -65,7 +66,7 @@ function greenButtEvent(event) {
 
     mixBox.style.backgroundColor= tmpcolor;
 
-    mixboxText();
+    mixboxText1();
 }
 
 function redButtEvent(event) {
@@ -76,7 +77,7 @@ function redButtEvent(event) {
 
     mixBox.style.backgroundColor= tmpcolor;
 
-    mixboxText();
+    mixboxText1();
 }
 
 console.log(mixBox.style.backgroundColor);
