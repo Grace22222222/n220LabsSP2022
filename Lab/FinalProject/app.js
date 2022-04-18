@@ -27,7 +27,7 @@ Must include half of these options: mouse interaction, 2 global variables access
 //Also want to try to make an easy and hard mode??
 
 let memeGame = document.getElementById("memeGame");
-let cardGin1 = document.getElementById("cardGin1");
+//let cardGin1 = document.getElementById("cardGin1");
 
 var randomColor = Math.floor(Math.random()*256);
 
@@ -35,7 +35,8 @@ var randomColor = Math.floor(Math.random()*256);
 //For now using normal functions to test
 function card1(){
 
-    cardGin1.style.backgroundColor="#669911";
+    cardGin1.style.backgroundColor=randomColor;
+    cardGin1.style.outline = "2px dotted black";
     cardGin1.style.height= "100px";
     cardGin1.style.width= "70px";
     cardGin1.style.margin= "5px";
@@ -45,7 +46,7 @@ function card1(){
 
 function card2(){
 
-    cardGin2.style.backgroundColor="#669911";
+    cardGin2.style.outline = "2px dotted black";
     cardGin2.style.height= "100px";
     cardGin2.style.width= "70px";
     cardGin2.style.margin= "5px";
@@ -55,7 +56,7 @@ function card2(){
 
 function card3(){
 
-    cardGin3.style.backgroundColor="#669911";
+    cardGin3.style.outline = "2px dotted black";
     cardGin3.style.height= "100px";
     cardGin3.style.width= "70px";
     cardGin3.style.margin= "5px";
@@ -65,14 +66,37 @@ function card3(){
 
 function card4(){
 
-    cardGin4.style.backgroundColor="#669911";
+    cardGin4.style.outline = "2px dotted black";
     cardGin4.style.height= "100px";
     cardGin4.style.width= "70px";
     cardGin4.style.margin= "5px";
     cardGin4.style.cssFloat= "left";
 
 }
+
+function card5(){
+
+    cardGin5.style.outline = "2px dotted black";
+    cardGin5.style.height= "100px";
+    cardGin5.style.width= "70px";
+    cardGin5.style.margin= "120px 0px 0px -315px";
+    cardGin5.style.cssFloat= "left";
+
+}
+
+function card6(){
+
+    cardGin6.style.outline = "2px dotted black";
+    cardGin6.style.height= "100px";
+    cardGin6.style.width= "70px";
+    cardGin6.style.margin= "120px 0px 0px -235px";
+    cardGin6.style.cssFloat= "left";
+
+}
+
 card1();
 card2();
 card3();
 card4();
+card5();
+card6();
