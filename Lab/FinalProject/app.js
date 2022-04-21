@@ -24,24 +24,65 @@ Must include half of these options: mouse interaction, 2 global variables access
 
 //Want to use colors to match instead of numbers/symbols/etc
 //Want to make the colors random each time, so the game can be either easy or difficult depending on the RNG
-//Also want to try to make an easy and hard mode??
 
 let memeGame = document.getElementById("memeGame");
 
-let equal1= document.getElementsByClassName("Match1");
-let equal2= document.getElementsByClassName("Match2");
-let equal3= document.getElementsByClassName("Match3");
-let equal4= document.getElementsByClassName("Match4");
-let equal5= document.getElementsByClassName("Match5");
-let equal6= document.getElementsByClassName("Match6");
-let equal7= document.getElementsByClassName("Match7");
-let equal8= document.getElementsByClassName("Match8");
+let cardRem;
+let lastCard;
+
+let cards = document.getElementsByClassName("card");
+
+
+for(let i = 0; i < cards.length; i++) {
+
+    cards[i].addEventListener("click",function(event){
+
+        console.log(cardRem);
+        console.log(event.target.dataset.color);
+        event.target.style.backgroundColor = event.target.dataset.color;
+        
+        if (cardRem != null){
+
+
+
+
+        
+            if (cardRem == event.target.dataset.color) {
+
+                console.log("oooo");
+                
+                lastCard.remove();
+                event.target.remove();
+                
+
+            } else {
+
+                //No matches
+                lastCard.style.backgroundColor= "#FFFFFF";
+                event.target.style.backgroundColor= "#FFFFFF";
+
+            }
+
+            cardRem=null;
+
+        } else{
+
+            cardRem = event.target.dataset.color;
+            lastCard = event.target;
+
+        }
+        
+
+    });
+    
+}
 
 //Use hard coded colors until you finish the game
+/*
 var randomColorR = Math.floor(Math.random()*256);
 var randomColorG = Math.floor(Math.random()*256);
 var randomColorB = Math.floor(Math.random()*256);
-
+*/
 //Create the 16 cards. Need to use a loop of some kind
 //For now using normal functions to test
 function card1(){
@@ -49,7 +90,6 @@ function card1(){
     //Will save for later
     //cardGin1.style.backgroundColor= "rgb("+randomColorR+","+randomColorG+","+randomColorB+")";
     //Below wouldn't work to match the colors due to it being set to a certain card, not multiple cards
-    //cardGin1.style.backgroundColor= cardMatchColor;
 
     cardGin1.style.outline = "2px dotted black";
     cardGin1.style.height= "100px";
@@ -209,110 +249,7 @@ function card16(){
 
 }
 
-
-for(let i = 0; i < equal1.length; i++) {
-
-    equal1[i].addEventListener("click",function(event){
-
-        console.log(event.target.dataset.color);
-        event.target.style.backgroundColor= event.target.dataset.color;
-
-    });
-    
-}
-
-for(let i = 0; i < equal2.length; i++) {
-
-    equal2[i].addEventListener("click",function(event){
-
-        console.log(event.target.dataset.color);
-        event.target.style.backgroundColor= event.target.dataset.color;
-
-    });
-    
-}
-
-for(let i = 0; i < equal3.length; i++) {
-
-    equal3[i].addEventListener("click",function(event){
-
-        console.log(event.target.dataset.color);
-        event.target.style.backgroundColor= event.target.dataset.color;
-
-    });
-    
-}
-
-for(let i = 0; i < equal4.length; i++) {
-
-    equal4[i].addEventListener("click",function(event){
-
-        console.log(event.target.dataset.color);
-        event.target.style.backgroundColor= event.target.dataset.color;
-
-    });
-    
-}
-
-for(let i = 0; i < equal5.length; i++) {
-
-    equal5[i].addEventListener("click",function(event){
-
-        console.log(event.target.dataset.color);
-        event.target.style.backgroundColor= event.target.dataset.color;
-
-    });
-    
-}
-
-for(let i = 0; i < equal6.length; i++) {
-
-    equal6[i].addEventListener("click",function(event){
-
-        console.log(event.target.dataset.color);
-        event.target.style.backgroundColor= event.target.dataset.color;
-
-    });
-    
-}
-
-for(let i = 0; i < equal7.length; i++) {
-
-    equal7[i].addEventListener("click",function(event){
-
-        console.log(event.target.dataset.color);
-        event.target.style.backgroundColor= event.target.dataset.color;
-
-    });
-    
-}
-
-for(let i = 0; i < equal8.length; i++) {
-
-    equal8[i].addEventListener("click",function(event){
-
-        console.log(event.target.dataset.color);
-        event.target.style.backgroundColor= event.target.dataset.color;
-
-    });
-    
-}
 card1();
-function reveal(){
-
-    if (equal1 == 0){
-
-
-        cardGin1.style.display="none";
-
-
-    };
-
-}
-
-
-
-
 card2();
 card3();
 card4();
