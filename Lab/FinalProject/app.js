@@ -49,17 +49,33 @@ for(let i = 0; i < cards.length; i++) {
         
             if (cardRem == event.target.dataset.color) {
 
-                console.log("oooo");
+                console.log(lastCard);
                 
-                lastCard.remove();
-                event.target.remove();
+                setTimeout(visi,2000);
+
+                function visi() {  
+
+                lastCard.style.visibility="hidden";
+                event.target.style.visibility="hidden";
+
+                }
+                
+                
                 
 
             } else {
 
                 //No matches
+
+                setTimeout(noVisi,2000);
+
+                function noVisi() {
+
                 lastCard.style.backgroundColor= "#FFFFFF";
                 event.target.style.backgroundColor= "#FFFFFF";
+
+                }
+               
 
             }
 
@@ -71,7 +87,13 @@ for(let i = 0; i < cards.length; i++) {
             lastCard = event.target;
 
         }
-        
+
+        function matchButt(){
+
+            cards.style.visibility="visible";
+
+        }
+        matchButt();
 
     });
     
