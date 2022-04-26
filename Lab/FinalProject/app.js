@@ -33,6 +33,8 @@ let lastCard;
 let cards = document.getElementsByClassName("card");
 
 
+
+
 for(let i = 0; i < cards.length; i++) {
 
     cards[i].addEventListener("click",function(event){
@@ -46,12 +48,13 @@ for(let i = 0; i < cards.length; i++) {
 
 
 
-        
+            //Tells if the cards match
+            //CLICK THEM SLOWLY
             if (cardRem == event.target.dataset.color) {
 
                 console.log(lastCard);
                 
-                setTimeout(visi,2000);
+                setTimeout(visi,1000);
 
                 function visi() {  
 
@@ -66,8 +69,7 @@ for(let i = 0; i < cards.length; i++) {
             } else {
 
                 //No matches
-
-                setTimeout(noVisi,2000);
+                setTimeout(noVisi,1000);
 
                 function noVisi() {
 
@@ -88,12 +90,39 @@ for(let i = 0; i < cards.length; i++) {
 
         }
 
+        //Make button that restarts the game
+        //Can't get it to change postions
+        /*
+        
+        function placeButton () {
+
+            let buttonPlace = document.getElementsByClassName("replayButton");
+
+            buttonPlace.style.margin= "500px";
+
+        }
+        placeButton();
+
+        
+
+        buttonPlace.style.margin = "500px";
+
+
+        document.getElementsByClassName("replayButton").hidden=false;
+
+        if (cards.style.visibility="hidden") {
+
+
+            matchButt();
+
+        }
+
         function matchButt(){
 
             cards.style.visibility="visible";
 
         }
-        matchButt();
+        */
 
     });
     
