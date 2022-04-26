@@ -32,6 +32,8 @@ let lastCard;
 
 let cards = document.getElementsByClassName("card");
 
+let replayButton = document.getElementById("replayButton");
+
 
 
 
@@ -60,6 +62,7 @@ for(let i = 0; i < cards.length; i++) {
 
                 lastCard.style.visibility="hidden";
                 event.target.style.visibility="hidden";
+                checkWin();
 
                 }
                 
@@ -90,42 +93,48 @@ for(let i = 0; i < cards.length; i++) {
 
         }
 
-        //Make button that restarts the game
-        //Can't get it to change postions
-        /*
-        
-        function placeButton () {
-
-            let buttonPlace = document.getElementsByClassName("replayButton");
-
-            buttonPlace.style.margin= "500px";
-
-        }
-        placeButton();
+       
 
         
-
-        buttonPlace.style.margin = "500px";
-
-
-        document.getElementsByClassName("replayButton").hidden=false;
-
-        if (cards.style.visibility="hidden") {
-
-
-            matchButt();
-
-        }
-
-        function matchButt(){
-
-            cards.style.visibility="visible";
-
-        }
-        */
 
     });
     
+}
+function checkWin() {
+ //set variable "stillGoing" to false
+
+        //for every card in cards
+            // check to see if they are set to 'visible'
+            //if not, set StillGoing to true
+            var StillGoing = false;
+
+            for (i=0;i<cards.length;i++) {
+    
+                let card=cards[i];
+    
+                if (card.style.visibility!="hidden") {
+    
+                    StillGoing= true;
+    
+                } else {
+                    console.log("hidden");
+                }
+    
+            }
+            //if stillGoing is false..
+            console.log(StillGoing);
+            if (StillGoing == false) {
+    
+                
+                replayButton.style.visibility="visible";
+                
+    
+            } else{
+    
+                StillGoing = true;
+                replayButton.style.visibility="hidden";
+    
+            }
 }
 
 //Use hard coded colors until you finish the game
@@ -140,7 +149,6 @@ function card1(){
     //Randomized color test = WORKS
     //Will save for later
     //cardGin1.style.backgroundColor= "rgb("+randomColorR+","+randomColorG+","+randomColorB+")";
-    //Below wouldn't work to match the colors due to it being set to a certain card, not multiple cards
 
     cardGin1.style.outline = "2px dotted black";
     cardGin1.style.height= "100px";
@@ -299,6 +307,20 @@ function card16(){
     cardGin16.style.cssFloat= "left";
 
 }
+
+function buttonClick() {
+
+            replayButton.style.backgroundColor="#748596";
+            replayButton.style.outline="2px dotted black";
+            replayButton.innerHTML=" Play Again?";
+            replayButton.style.height="25px";
+            replayButton.style.width="100px";
+            replayButton.style.margin= "0px 0px 0px 400px";
+
+            
+        }
+        buttonClick();
+
 
 card1();
 card2();
