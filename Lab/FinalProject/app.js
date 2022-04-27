@@ -35,7 +35,7 @@ let cards = document.getElementsByClassName("card");
 let replayButton = document.getElementById("replayButton");
 
 
-
+replayButton.style.visibility="hidden";
 
 for(let i = 0; i < cards.length; i++) {
 
@@ -308,18 +308,31 @@ function card16(){
 
 }
 
-function buttonClick() {
 
-            replayButton.style.backgroundColor="#748596";
-            replayButton.style.outline="2px dotted black";
-            replayButton.innerHTML=" Play Again?";
-            replayButton.style.height="25px";
-            replayButton.style.width="100px";
-            replayButton.style.margin= "0px 0px 0px 400px";
+function buttonStyle() {
 
+    replayButton.style.backgroundColor="#748596";
+    replayButton.style.outline="2px dotted black";
+    replayButton.innerHTML=" Play Again?";
+    replayButton.style.height="25px";
+    replayButton.style.width="100px";
+    replayButton.style.margin= "0px 0px 0px 400px";
             
-        }
-        buttonClick();
+    
+
+}
+
+buttonStyle();
+
+//Reset the game
+function replay() {
+
+    location.reload();
+
+}
+        
+
+
 
 
 card1();
